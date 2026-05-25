@@ -31,7 +31,7 @@ pip install code-indexer
 Or from source:
 
 ```bash
-git clone https://github.com/YOUR_USER/code-indexer.git
+git clone https://github.com/zhuxinfei/code-indexer.git
 cd code-indexer
 pip install .
 ```
