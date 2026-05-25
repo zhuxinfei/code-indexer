@@ -1,0 +1,21 @@
+[project]
+name = "code-indexer"
+version = "0.1.0"
+description = "100% local code knowledge graph MCP server for Claude Code — pre-indexes your codebase so AI agents find symbols instantly without grep/Explore"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.0"]
+
+[project.scripts]
+code-indexer = "code_indexer.server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
